@@ -4,6 +4,39 @@
     box-sizing: border-box;
 }
 
+nav {
+    display: flex;
+}
+
+nav ul {
+    display: flex;
+    list-style: none;
+    padding: 0px 10px 0px 10px;
+    align-items: center;
+    justify-content: center;
+}
+
+li.table__header {
+    display: inline-block;
+    position: relative;
+    padding: 10px;
+    direction: none;
+    text-decoration: none;
+}
+
+a {
+    text-decoration: none;
+    color: antiquewhite;
+    font-size: larger;
+}
+
+footer {
+    background-color: cadetblue;
+    color: antiquewhite;
+    padding: 10px;
+    text-align: center;
+}
+
 .block__header {
     display: flex;
     align-items: center;
@@ -24,37 +57,17 @@
     font-weight: bold;
 }
 
-nav {
-    display: flex;
-}
-
-nav ul {
-    display: flex;
-    list-style: none;
-    padding: 0px 10px 0px 10px;
-    align-items: center;
-    justify-content: center;
-}
-
-li {
-    display: inline-block;
-    position: relative;
-    padding: 10px;
-    direction: none;
-    text-decoration: none;
-}
-
-a {
-    text-decoration: none;
-    color: antiquewhite;
-    font-size: larger;
-}
-
 
 #inicio {
     background-image: url(../assets/img/menu-background.jpg);
     background-repeat: no-repeat;
-    height: 100vh;
+    height: 40vh;
+    align-items: center;
+}
+
+#logo {
+    background-image: url(../assets/img/logo.png);
+    background-repeat: no-repeat;
     align-items: center;
 }
 
@@ -67,8 +80,39 @@ a {
     
 }
 
-footer {
-    background-color: cadetblue;
-    color: antiquewhite;
+.parallax {
+    background-image: url(../assets/img/menu-background.jpg);
+    height: 400px;
+  
+    /* Create the parallax scrolling effect */
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+
+    /* box modeling */
+    padding: 50px 30px;
+}
+
+.parallax h3 {
+    text-align: center; 
+    background-color: rgba(255,255,255, 0.5);
+    padding-top: 20px;
+    margin-top: 100px;
+}
+.parallax p {
+    text-align: center; 
+    background-color: rgba(255,255,255, 0.5);
+    text-transform: capitalize;
     padding: 10px;
+}
+
+.infoText {
+    border-radius: 15px;
+    background-color: blanchedalmond;
+    padding: 10px;
+    margin: 40px 20px;
+    align-items: center;
+    align-content: center;
+    max-width: 1400px;
 }
