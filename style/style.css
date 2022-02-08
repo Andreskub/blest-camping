@@ -24,6 +24,12 @@ li.table__header {
     text-decoration: none;
 }
 
+li.display__accommodations {
+    padding: 10px;
+    display: flex;
+    align-items: center;
+}
+
 a {
     text-decoration: none;
     color: antiquewhite;
@@ -115,4 +121,11 @@ footer {
     align-items: center;
     align-content: center;
     max-width: 1400px;
+}
+
+
+.accommodationsText {
+    padding: 40px;
+    align-items: center;
+
 }
