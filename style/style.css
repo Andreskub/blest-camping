@@ -25,9 +25,21 @@ li.table__header {
 }
 
 li.display__accommodations {
-    padding: 10px;
     display: flex;
-    align-items: center;
+    flex-direction: row;
+    justify-content: center;
+    flex-wrap: wrap;
+    padding: 20px;
+}
+
+li.display__activities {
+    display: inline-block;
+    position: relative;
+    flex-direction: row;
+    justify-content: center;
+    text-decoration: none;
+    flex-wrap: wrap;
+    padding: 20px;
 }
 
 a {
@@ -123,9 +135,13 @@ footer {
     max-width: 1400px;
 }
 
-
 .accommodationsText {
-    padding: 40px;
+    padding: 20px;
     align-items: center;
+    max-width: 300px;
 
+}
+
+.activities {
+    padding: 40px;
 }
