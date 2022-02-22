@@ -11,62 +11,93 @@
         <link rel="shortcut icon" href="../assets/img/logo.png" type="image/x-icon">
         <!-- Linked CSS -->
         <link rel="stylesheet" href="../style/style.css">
+
+        <style>
+            @media screen and (max-width: 480px){
+                .block__header{
+                    padding: 5px;
+                }
+
+                .table__header {
+                    font-size: 10px;
+                    padding: 5px;
+                }
+
+                nav ul {
+                    width: fit-content;   
+                }
+            }
+
+            @media screen and (max-width: 768px) {
+                nav ul {
+                    width: fit-content;   
+                } 
+            }
+        </style>
     </head>
     
     <body>
-        <!-- Start Header -->
-        <header class="block__header">
-            <!-- Start Nav -->
-            <nav>
-                <ul>
-                    <li class="table__header"><a href="../views/accommodations.html">Accommodations</a></li>
-                    <li class="table__header"><a href="../views/activities.html">Activities</a></li>
+        <div class="gridContactContainer">
+            <!-- Start Header -->
+            <header class="block__header">
+                <!-- Start Nav -->
+                <nav>
+                    <ul>
+                        <li class="table__header"><a href="../views/accommodations.html">Accommodations</a></li>
+                        <li class="table__header"><a href="../views/activities.html">Activities</a></li>
+                    </ul>
+                    <a href="../index.html"><img src="../assets/img/logo.png" alt="Blest Logo"></a>
+                    <ul>
+                        <li class="table__header"><a href="../views/location.html">Location</a></li>
+                        <li class="table__header"><a href="../views/contact.html">Contact</a></li>
+                    </ul>
+                </nav>
+                <!-- End Nav -->
+            </header>
+            <!-- End Header-->
+
+            <section class="gridSectionForm">
+                <!-- Start Client Form -->
+                <form action="" method="" enctype="" class="flexForm">
+                    <!-- text, password, email -->
+                    <div class="itemForm">
+                        <label for="name">Full Name:</label>
+                        <input type="text" name="name" id="name"/>
+                    </div>
+                    <div class="itemForm">
+                        <label for="email">Email:</label>
+                        <input type="email" id="email"/>
+                    </div>
+                    <div class="itemForm">
+                        <label for="phone">Phone:</label>
+                        <input type="phone" id="phone"/>
+                    </div>
+                    
+                    <div class="itemForm">
+                        <p>Accomodation</p>
+                        <select name="" id="">
+                            <option value="Dormis" selected>Dormis</option>
+                            <option value="Camping">Camping</option>
+                        </select>
+                    </div>
+
+                    <!-- reset, button-->
+                    <div class="itemForm">
+                        <button type="submit">Enviar</button>
+                    </div>
+                </form>
+                <!-- End Client Form -->
+            </section>
+
+            <!-- Start Footer -->
+            <footer class="block__footer">
+                <ul class="social">
+                    <li><img src="../assets/img/logo.png" alt="Blest Logo"></li>
+                    <li><p>Blest Camping</p></li>
                 </ul>
-                <a href="../index.html"><img src="../assets/img/logo.png" alt="Blest Logo"></a>
-                <ul>
-                    <li class="table__header"><a href="../views/location.html">Location</a></li>
-                    <li class="table__header"><a href="../views/contact.html">Contact</a></li>
-                </ul>
-            </nav>
-            <!-- End Nav -->
-        </header>
-        <!-- End Header-->
-
-        <section style="padding: 40px;">
-            <!-- Start Client Form -->
-            <form action="" method="" enctype="">
-                <!-- text, password, email -->
-                <label for="name">Full Name:</label>
-                <input type="text" name="name" id="name"/>
-
-                <label for="email">Email:</label>
-                <input type="email" id="email"/>
-
-                <label for="phone">Phone:</label>
-                <input type="phone" id="phone"/>
-
-                <p>Accomodation</p>
-                <select name="" id="">
-                    <option value="Dormis" selected>Dormis</option>
-                    <option value="Camping">Camping</option>
-                </select>
-
-                <hr/>
-
-                <!-- reset, button-->
-                <button type="submit">Enviar</button>
-            </form>
-            <!-- End Client Form -->
-        </section>
-
-        <!-- Start Footer -->
-        <footer>
-            <ul>
-                <li><img src="../assets/img/logo.png" alt="Blest Logo"></li>
-                <li><p>Blest Camping</p></li>
-            </ul>
-        </footer>
-        <!-- End Footer -->
+            </footer>
+            <!-- End Footer -->
+        </div>
     </body>
         
         

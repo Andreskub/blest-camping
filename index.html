@@ -15,6 +15,53 @@
         <link rel="shortcut icon" href="/blest-camping/assets/img/logo.png" type="image/x-icon">
         <!-- Linked CSS -->
         <link rel="stylesheet" href="style/style.css">
+
+        <style>
+            @media screen and (max-width: 480px){
+                .block__header{
+                    padding: 5px;
+                }
+
+                .parallax {
+                    height: 200px;
+                    background-size: auto;
+                }
+
+                .parallax h3 {
+                    padding-top: 10px;
+                    margin-top: 30px;
+                    font-size: 15px;
+                }
+
+                .parallax p {
+                    font-size: 10px;
+                }
+
+                .table__header {
+                    font-size: 10px;
+                    padding: 5px;
+                }
+
+                nav ul {
+                    width: fit-content;   
+                }
+
+                h4 {
+                    font-size: 15px;
+                }
+
+                .infoText {
+                    margin: 20px 10px;
+                }
+            }
+
+            @media screen and (max-width: 768px) {
+                nav ul {
+                    width: fit-content;   
+                } 
+            }
+        </style>
+
     </head>
     
     <body>
@@ -63,7 +110,7 @@
 
         <!-- Start Footer -->
         <footer>
-            <ul>
+            <ul class="social">
                 <li><img src="/blest-camping/assets/img/logo.png" alt="Blest Logo"></li>
                 <li><p>Blest Camping</p></li>
             </ul>
