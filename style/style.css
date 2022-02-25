@@ -144,36 +144,6 @@ footer .social {
     
 }
 
-.parallax {
-    background-image: url(../assets/img/menu-background.jpg);
-    height: 400px;
-  
-    /* Create the parallax scrolling effect */
-    background-attachment: fixed;
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
-
-    /* box modeling */
-    padding: 50px 30px;
-
-    grid-area: section1;
-}
-
-.parallax h3 {
-    text-align: center; 
-    background-color: rgba(255,255,255, 0.5);
-    padding-top: 20px;
-    margin-top: 100px;
-}
-
-.parallax p {
-    text-align: center; 
-    background-color: rgba(255,255,255, 0.5);
-    text-transform: capitalize;
-    padding: 10px;
-}
-
 .gridSectionInformation {
     grid-area: section2;
     background-color: white;
@@ -200,3 +170,49 @@ footer .social {
 .activities {
     padding: 40px;
 }
+
+
+/*T4est*/
+
+/* Container holding the image and the text */
+.container {
+    position: relative;
+    text-align: center;
+    color: white;
+  }
+  
+  /* Bottom left text */
+  .bottom-left {
+    position: absolute;
+    bottom: 8px;
+    left: 16px;
+  }
+  
+  /* Top left text */
+  .top-left {
+    position: absolute;
+    top: 8px;
+    left: 16px;
+  }
+  
+  /* Top right text */
+  .top-right {
+    position: absolute;
+    top: 8px;
+    right: 16px;
+  }
+  
+  /* Bottom right text */
+  .bottom-right {
+    position: absolute;
+    bottom: 8px;
+    right: 16px;
+  }
+  
+  /* Centered text */
+  .centered {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
