@@ -189,6 +189,8 @@ footer .social {
     max-width: 1400px;
     margin-left: auto;
     margin-right: auto;
+
+    animation: move 5s infinite linear;
 }
 
 .accommodationsText {
@@ -199,4 +201,41 @@ footer .social {
 
 .activities {
     padding: 40px;
+}
+
+
+.animation {
+    margin-top: 70px;
+}
+
+.animation div {
+    width: 200px;
+    margin: 0 auto;
+    color: white;
+    animation-name: move;
+    animation-duration: 5s;
+
+    animation: move 5s infinite linear;
+}
+
+@keyframes move {
+    from {
+        transform: rotate(0);
+    }
+    to {
+        transform: rotate(360deg);
+    }
+}
+
+.textText {
+    animation: textMove 0.4s infinite alternate;
+}
+
+@keyframes textMove {
+    from {
+        top: 30px;
+    }
+    to {
+        top: 5px;
+    }
 }
