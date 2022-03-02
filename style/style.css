@@ -34,6 +34,29 @@ li.display__accommodations {
     padding: 20px;
 }
 
+.display__accommodations {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    flex-wrap: wrap;
+    padding: 20px;
+}
+
+.displayAccommodations {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    flex-wrap: wrap;
+    padding: 20px;
+}
+
+.accommodationImage {
+    width: 500px;
+    border: 10px solid transparent;
+    border: 5px solid #AEC3B0;
+    border-radius: 10px;
+}
+
 li.display__activities {
     display: inline-block;
     position: relative;
@@ -51,7 +74,7 @@ a {
 }
 
 footer {
-    background-color: cadetblue;
+    background-color: #598392;
     color: antiquewhite;
     padding: 15px;
     text-align: center;
@@ -69,7 +92,7 @@ footer .social {
     overflow: hidden;
     width: 100%;
     padding: 15px;
-    background-color: cadetblue;
+    /*background-color: cadetblue;*/
     position: sticky;
     top: 0px;
     grid-area: header;
@@ -145,18 +168,16 @@ footer .social {
 }
 
 .gridSectionInformation {
-    grid-area: section2;
     background-color: white;
 }
 
 .infoText {
     border-radius: 15px;
     background-color: blanchedalmond;
-    padding: 10px;
+    padding: 15px;
     margin: 40px 20px;
     align-items: center;
     align-content: center;
-    max-width: 1400px;
     margin-left: auto;
     margin-right: auto;
 }
@@ -167,20 +188,114 @@ footer .social {
     max-width: 300px;
 }
 
+div.accommodationsText {
+    align-items: center;
+    text-align: center;
+}
+
 .activities {
     padding: 40px;
 }
 
+#rotateChildren {
+    display: flex;
+    flex-direction: row;
+    
+}
+
+
+@media screen and (max-width: 840px) {
+    .displayAccommodations.rotateChildren{
+        display: flex;
+        flex-direction: column-reverse;
+        justify-content: center;
+        flex-wrap: wrap;
+        padding: 20px;
+        align-items: center;
+        
+    }
+}
 
 /*T4est*/
 
-/* Container holding the image and the text */
-.container {
-    position: relative;
-    text-align: center;
-    color: white;
+header {
+    display: flex;
+    justify-content: center;
+    overflow: hidden;
+    width: 100%;
+    padding: 15px;
+    background-color: #598392;
+    position: sticky;
+    top: 0px;
 }
+
+header .mainNav ul {
+    list-style: none;
+    position: relative;
+    margin-top: 1.2em;
+    display: flex;
+}
+
+header .mainNav a {
+    margin: 0 5px 0 5px;
+    /*padding-left: 25px;*/
+    text-decoration: none;
+    font-size: 1.5em;
+    font-weight: 600;
+    color: antiquewhite;
+    padding: 5px;
+    position: relative;
+    transition: all 0.1ms 150ms;
+    vertical-align: middle;
+}
+
+@media screen and (max-width: 480px) {
+    header .mainNav a {
+      font-size: 1.3rem;
+    }
+}
+header .navPrincipal a:hover {
+    font-weight: 900;
+  }
+header .navPrincipal a:hover::after, header .navPrincipal a:hover::before {
+    transform: scale(1);
+}
+
+
+/* Container holding the image and the text */
+.containerStyle {
+    background-image: url(../assets/img/menu-background.jpg);
+    height: 400px;
   
+    /* Create the parallax scrolling effect */
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+
+    /* box modeling */
+    padding: 50px 30px;
+    
+}
+
+.containerStyle h3 {
+    text-align: center; 
+    background-color: rgba(255,255,255, 0.5);
+    padding-top: 20px;
+    margin-top: 100px;
+}
+
+.containerStyle p {
+    text-align: center; 
+    background-color: rgba(255,255,255, 0.5);
+    text-transform: capitalize;
+    padding: 10px;
+}
+
+
+
+/* ------ TEST TEXT IN IMAGE ------ */
+
 /* Bottom left text */
 .bottom-left {
 position: absolute;
@@ -215,10 +330,4 @@ position: absolute;
 top: 50%;
 left: 50%;
 transform: translate(-50%, -50%);
-}
-
-.backgroundImage {
-    background-image: url(../assets/img/menu-background.jpg);
-    background-size: cover;
-    height: 500px;
 }

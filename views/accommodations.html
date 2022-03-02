@@ -9,55 +9,68 @@
 
         <!-- Linked Icon -->
         <link rel="shortcut icon" href="/blest-camping/assets/img/logo.png" type="image/x-icon">
+        <!-- Add Bootstrap -->
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
         <!-- Linked CSS -->
         <link rel="stylesheet" href="../style/style.css">
     </head>
 
     <body>
         <!-- Start Header -->
-        <header class="block__header">
+        <header>
             <!-- Start Nav -->
-            <nav>
-                <ul>
-                    <li class="table__header"><a href="../views/accommodations.html">Accommodations</a></li>
-                    <li class="table__header"><a href="../views/activities.html">Activities</a></li>
-                </ul>
-                <a href="../index.html"><img src="../assets/img/logo.png" alt="Blest Logo"></a>
-                <ul>
-                    <li class="table__header"><a href="../views/location.html">Location</a></li>
-                    <li class="table__header"><a href="../views/contact.html">Contact</a></li>
-                </ul>
+            <nav class="navbar navbar-expand-lg navbar-light sticky-top mainNav">
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="d-md-flex d-block flex-row mx-md-auto mx-0">
+                    <div class="collapse navbar-collapse mr-auto" id="navbarNavAltMarkup">
+                        <div class="navbar-nav">
+                            <a class="nav-item nav-link" href="./accommodations.html">Accommodations</a>
+                            <a class="nav-item nav-link" href="./activities.html">Activities</a>
+                            <a href="../index.html"><img src="../assets/img/logo.png" alt="Blest Logo"></a>
+                            <a class="nav-item nav-link disabled" href="./location.html">Location</a>
+                            <a class="nav-item nav-link" href="./contact.html">Contact</a>
+                        </div>
+                    </div>
+                </div>
             </nav>
             <!-- End Nav -->
+            
         </header>
         <!-- End Header-->
 
+
         <section>
-            <ul>
-                <li class="display__accommodations">
-                    <img src="../assets/img/dormis.jpg" alt="Dormis Photo" width="500px">
-                    <div class="accommodationsText">
-                        <h2>Dormis</h2>
-                        <p>Dormis description.</p>
-                    </div>
-                </li>
-                <li class="display__accommodations" style="flex-wrap: wrap-reverse;">               
-                    <div class="accommodationsText">
-                        <h2 sty>Camping</h2>
-                        <p>Camping description.</p>
-                    </div>
-                    <img src="../assets/img/camping.jpg" alt="Camping Photo" width="500px">
-                </li>
-            </ul>
+            <div class="container-fluid displayAccommodations">
+                <img src="../assets/img/dormis.jpg" alt="Dormis Photo" class="accommodationImage">
+                <div class="accommodationsText">
+                    <h2>Dormis</h2>
+                    <p>Our dorms consist of a Mountain Refuge with 7 rooms and 4 dorms. A heated environment and can be used at any time of the year with a warm and pleasant atmosphere.</p>
+                </div>
+            </div>
+            <div class="container-fluid displayAccommodations rotateChildren">
+                <div class="accommodationsText">
+                    <h2 sty>Camping</h2>
+                    <p>Camping Blest has all the comforts for your stay at any time of the year or just to enjoy the day.</p>
+                </div>
+                <img src="../assets/img/camping.jpg" alt="Camping Photo" class="accommodationImage">
+            </div>
         </section>
 
         <!-- Start Footer -->
-        <footer>
-            <ul class="social">
-                <li><img src="../assets/img/logo.png" alt="Blest Logo"></li>
-                <li><p>Blest Camping</p></li>
-            </ul>
+        <footer class="container-fluid">
+            <div class="row">
+                <ul>
+                    <li><img src="/blest-camping/assets/img/logo.png" alt="Blest Logo"></li>
+                    <li><p>Blest Camping</p></li>
+                </ul>
+            </div>
         </footer>
         <!-- End Footer -->
+
+        <!-- Bootstrap Scripts -->
+        <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.10.2/dist/umd/popper.min.js" integrity="sha384-7+zCNj/IqJ95wo16oMtfsKbZ9ccEh31eOz1HGyDuCQ6wgnyJNSYdrPa03rtR1zdB" crossorigin="anonymous"></script>
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.min.js" integrity="sha384-QJHtvGhmr9XOIpI6YVutG+2QOK9T+ZnN4kzFN1RtK3zEFEIsxhlmWl5/YESvpZ13" crossorigin="anonymous"></script>
     </body>
 </html>
