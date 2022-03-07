@@ -18,55 +18,6 @@ nav ul {
     width: 300px;
 }
 
-li.table__header {
-    display: inline-block;
-    position: relative;
-    padding: 10px;
-    direction: none;
-    text-decoration: none;
-}
-
-li.display__accommodations {
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    flex-wrap: wrap;
-    padding: 20px;
-}
-
-.display__accommodations {
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    flex-wrap: wrap;
-    padding: 20px;
-}
-
-.displayAccommodations {
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    flex-wrap: wrap;
-    padding: 20px;
-}
-
-.accommodationImage {
-    width: 500px;
-    border: 10px solid transparent;
-    border: 5px solid #AEC3B0;
-    border-radius: 10px;
-}
-
-li.display__activities {
-    display: inline-block;
-    position: relative;
-    flex-direction: row;
-    justify-content: center;
-    text-decoration: none;
-    flex-wrap: wrap;
-    padding: 20px;
-}
-
 a {
     text-decoration: none;
     color: antiquewhite;
@@ -76,154 +27,15 @@ a {
 footer {
     background-color: #598392;
     color: antiquewhite;
-    padding: 15px;
     text-align: center;
     text-decoration: none;
 }
-
-footer .social {
-    align-items: center;
-    list-style: none;
-}
-
-.block__header {
-    display: flex;
-    justify-content: center;
-    overflow: hidden;
-    width: 100%;
-    padding: 15px;
-    /*background-color: cadetblue;*/
-    position: sticky;
-    top: 0px;
-    grid-area: header;
-}
-
-
-.block__menuitem {
-    display: inline;
-    background-color: azure;
-    padding: 10px 15px;
-    font-weight: bold;
-}
-
-.gridContactContainer {
-    display: grid;
-	grid-template-areas: 
-	"header header"
-	"section1 section1"
-    "section2 section2"
-	"footer footer";
-	grid-template-columns: 50% 50%;
-	grid-template-rows: 100px 1fr auto;
-	background-color: antiquewhite;
-}
-
-.gridSectionForm {
-    grid-area: 2 / 1 / span 1 / span 2;
-}
-
-.flexForm {
-    display: flex;
-	flex-direction: row;
-	justify-content: space-evenly;
-	border: 1px solid black;
-	width: 100%;
-	align-items: stretch;
-	flex-wrap: wrap;
-	align-content: stretch;
-    align-items: center;
-}
-
-.itemForm {
-    display: flex;
-    flex-direction: column;
-    padding: 20px;
-}
-
-.block__footer {
-    grid-area: footer;
-}
-
-
-#inicio {
-    background-image: url(../assets/img/menu-background.jpg);
-    background-repeat: no-repeat;
-    height: 40vh;
-    align-items: center;
-}
-
-#logo {
-    background-image: url(../assets/img/logo.png);
-    background-repeat: no-repeat;
-    align-items: center;
-}
-
-.homeText{
-    border-radius: 15px;
-    background-color: blanchedalmond;
-    padding: 10px;
-    text-align: center;
-    align-items: center;
-    
-}
-
-.gridSectionInformation {
-    background-color: white;
-}
-
-.infoText {
-    border-radius: 15px;
-    background-color: blanchedalmond;
-    padding: 15px;
-    margin: 40px 20px;
-    align-items: center;
-    align-content: center;
-    margin-left: auto;
-    margin-right: auto;
-}
-
-.accommodationsText {
-    padding: 20px;
-    align-items: center;
-    max-width: 300px;
-}
-
-div.accommodationsText {
-    align-items: center;
-    text-align: center;
-}
-
-.activities {
-    padding: 40px;
-}
-
-#rotateChildren {
-    display: flex;
-    flex-direction: row;
-    
-}
-
-
-@media screen and (max-width: 840px) {
-    .displayAccommodations.rotateChildren{
-        display: flex;
-        flex-direction: column-reverse;
-        justify-content: center;
-        flex-wrap: wrap;
-        padding: 20px;
-        align-items: center;
-        
-    }
-}
-
-/*T4est*/
 
 header {
     display: flex;
     justify-content: center;
     overflow: hidden;
     width: 100%;
-    padding: 15px;
     background-color: #598392;
     position: sticky;
     top: 0px;
@@ -238,7 +50,6 @@ header .mainNav ul {
 
 header .mainNav a {
     margin: 0 5px 0 5px;
-    /*padding-left: 25px;*/
     text-decoration: none;
     font-size: 1.5em;
     font-weight: 600;
@@ -261,6 +72,8 @@ header .navPrincipal a:hover::after, header .navPrincipal a:hover::before {
     transform: scale(1);
 }
 
+
+/* DASBOARD */
 
 /* Container holding the image and the text */
 .containerStyle {
@@ -292,40 +105,90 @@ header .navPrincipal a:hover::after, header .navPrincipal a:hover::before {
     padding: 10px;
 }
 
-/* ------ TEST TEXT IN IMAGE ------ */
-
-/* Bottom left text */
-.bottom-left {
-position: absolute;
-bottom: 8px;
-left: 16px;
+.infoText {
+    border-radius: 15px;
+    background-color: blanchedalmond;
+    padding: 15px;
+    margin: 40px 20px;
+    align-items: center;
+    align-content: center;
+    margin-left: auto;
+    margin-right: auto;
 }
 
-/* Top left text */
-.top-left {
-position: absolute;
-top: 8px;
-left: 16px;
+/* ACCOMMODATIONS */
+
+.displayAccommodations {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    flex-wrap: wrap;
+    padding: 20px;
 }
 
-/* Top right text */
-.top-right {
-position: absolute;
-top: 8px;
-right: 16px;
+.accommodationImage {
+    width: 500px;
+    border: 10px solid transparent;
+    border: 5px solid #AEC3B0;
+    border-radius: 10px;
 }
 
-/* Bottom right text */
-.bottom-right {
-position: absolute;
-bottom: 8px;
-right: 16px;
+li.display__activities {
+    display: inline-block;
+    position: relative;
+    flex-direction: row;
+    justify-content: center;
+    text-decoration: none;
+    flex-wrap: wrap;
+    padding: 20px;
 }
 
-/* Centered text */
-.centered {
-position: absolute;
-top: 50%;
-left: 50%;
-transform: translate(-50%, -50%);
+.accommodationsText {
+    padding: 20px;
+    align-items: center;
+    max-width: 300px;
+}
+
+div.accommodationsText {
+    align-items: center;
+    text-align: center;
+}
+
+@media screen and (max-width: 840px) {
+    .displayAccommodations.rotateChildren{
+        display: flex;
+        flex-direction: column-reverse;
+        justify-content: center;
+        flex-wrap: wrap;
+        padding: 20px;
+        align-items: center;
+        
+    }
+}
+
+/* ACTIVITIES */
+
+.activities {
+    padding: 40px;
+}
+
+
+/* CONTACT */
+
+.flexForm {
+    display: flex;
+	flex-direction: row;
+	justify-content: space-evenly;
+	border: 1px solid black;
+	width: 100%;
+	align-items: stretch;
+	flex-wrap: wrap;
+	align-content: stretch;
+    align-items: center;
+}
+
+.itemForm {
+    display: flex;
+    flex-direction: column;
+    padding: 20px;
 }
