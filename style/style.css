@@ -9,6 +9,10 @@ nav {
     display: flex;
 }
 
+main {
+    min-height: 100vh;
+}
+
 nav ul {
     display: flex;
     list-style: none;
@@ -29,6 +33,10 @@ footer {
     color: antiquewhite;
     text-align: center;
     text-decoration: none;
+}
+
+footer ul {
+    margin: 0%;
 }
 
 header {
@@ -71,7 +79,6 @@ header .navPrincipal a:hover {
 header .navPrincipal a:hover::after, header .navPrincipal a:hover::before {
     transform: scale(1);
 }
-
 
 /* DASBOARD */
 
@@ -133,16 +140,6 @@ header .navPrincipal a:hover::after, header .navPrincipal a:hover::before {
     border-radius: 10px;
 }
 
-li.display__activities {
-    display: inline-block;
-    position: relative;
-    flex-direction: row;
-    justify-content: center;
-    text-decoration: none;
-    flex-wrap: wrap;
-    padding: 20px;
-}
-
 .accommodationsText {
     padding: 20px;
     align-items: center;
@@ -168,10 +165,69 @@ div.accommodationsText {
 
 /* ACTIVITIES */
 
-.activities {
-    padding: 40px;
+.displayActivity {
+    margin: 10px;
+    border-radius: 10px;
+    padding: 0px;
+    width: 18rem;
+    /*animation: textMove 0.4s infinite alternate;*/
 }
 
+.activityImage {
+    height: 256px;
+    min-width: 256px;
+    /*animation: zoom-in-zoom-out 1s ease infinite;*/
+}
+
+@keyframes zoom-in-zoom-out {
+    0% {
+      transform: scale(1, 1);
+    }
+    50% {
+      transform: scale(1.1, 1.1);
+    }
+    100% {
+      transform: scale(1, 1);
+    }
+  }
+
+@keyframes textMove {
+    from {
+        top: 30px;
+    }
+    to {
+        top: 5px;
+    }
+}
+
+.wiggleButton {
+    animation: wiggle 2s linear infinite;
+}
+  
+/* Keyframes */
+@keyframes wiggle {
+    0%, 7% {
+        transform: rotateZ(0);
+    }
+    15% {
+        transform: rotateZ(-15deg);
+    }
+    20% {
+        transform: rotateZ(10deg);
+    }
+    25% {
+        transform: rotateZ(-10deg);
+    }
+    30% {
+        transform: rotateZ(6deg);
+    }
+    35% {
+        transform: rotateZ(-4deg);
+    }
+    40%, 100% {
+        transform: rotateZ(0);
+    }
+}
 
 /* CONTACT */
 
