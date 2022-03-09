@@ -1,0 +1,20 @@
+{
+  "name": "blest-camping",
+  "version": "1.0.0",
+  "description": "<div align=\"center\">\r     <h1> Blest Camping </h1>\r     <img src=https://uspto.report/TM/90564833/mark.png width=\"200\"/>\r </div>",
+  "main": "index.js",
+  "scripts": {
+    "sass": "sass scss/style.scss style/style.css -w --no-source-map -s compressed"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Andreskub/blest-camping.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Andreskub/blest-camping/issues"
+  },
+  "homepage": "https://github.com/Andreskub/blest-camping#readme"
+}
+ 

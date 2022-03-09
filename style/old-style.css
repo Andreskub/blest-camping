@@ -1,0 +1,251 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Kanit', sans-serif;
+}
+
+nav {
+  display: flex;
+}
+
+main {
+  min-height: 100vh;
+}
+
+nav ul {
+  display: flex;
+  list-style: none;
+  padding: 0px 10px 0px 10px;
+  align-items: center;
+  justify-content: space-evenly;
+  width: 300px;
+}
+
+a {
+  text-decoration: none;
+  color: antiquewhite;
+  font-size: larger;
+}
+
+footer {
+  background-color: #598392;
+  color: antiquewhite;
+  text-align: center;
+  text-decoration: none;
+}
+
+footer ul {
+  margin: 0%;
+}
+
+header {
+  display: flex;
+  justify-content: center;
+  overflow: hidden;
+  width: 100%;
+  background-color: #598392;
+  position: sticky;
+  top: 0px;
+  z-index: 1;
+}
+
+header .mainNav ul {
+  list-style: none;
+  position: relative;
+  margin-top: 1.2em;
+  display: flex;
+}
+
+header .mainNav a {
+  margin: 0 5px 0 5px;
+  text-decoration: none;
+  font-size: 1.5em;
+  font-weight: 600;
+  color: antiquewhite;
+  padding: 5px;
+  position: relative;
+  transition: all 0.1ms 150ms;
+  vertical-align: middle;
+}
+
+@media screen and (max-width: 480px) {
+  header .mainNav a {
+    font-size: 1.3rem;
+  }
+}
+header .navPrincipal a:hover {
+  font-weight: 900;
+}
+header .navPrincipal a:hover::after, header .navPrincipal a:hover::before {
+  transform: scale(1);
+}
+
+/* DASBOARD */
+
+/* Container holding the image and the text */
+.containerStyle {
+  background-image: url(../assets/img/menu-background.jpg);
+  height: 400px;
+
+  /* Create the parallax scrolling effect */
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+
+  /* box modeling */
+  padding: 50px 30px;
+  
+}
+
+.containerStyle h3 {
+  text-align: center; 
+  background-color: rgba(255,255,255, 0.5);
+  padding-top: 20px;
+  margin-top: 100px;
+}
+
+.containerStyle p {
+  text-align: center; 
+  background-color: rgba(255,255,255, 0.5);
+  text-transform: capitalize;
+  padding: 10px;
+}
+
+.infoText {
+  border-radius: 15px;
+  background-color: blanchedalmond;
+  padding: 15px;
+  margin: 40px 20px;
+  align-items: center;
+  align-content: center;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+/* ACCOMMODATIONS */
+
+.displayAccommodations {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  flex-wrap: wrap;
+  padding: 20px;
+}
+
+.accommodationImage {
+  width: 500px;
+  border: 10px solid transparent;
+  border: 5px solid #AEC3B0;
+  border-radius: 10px;
+}
+
+.accommodationsText {
+  padding: 20px;
+  align-items: center;
+  max-width: 300px;
+}
+
+div.accommodationsText {
+  align-items: center;
+  text-align: center;
+}
+
+@media screen and (max-width: 840px) {
+  .displayAccommodations.rotateChildren{
+      display: flex;
+      flex-direction: column-reverse;
+      justify-content: center;
+      flex-wrap: wrap;
+      padding: 20px;
+      align-items: center;
+      
+  }
+}
+
+/* ACTIVITIES */
+
+.displayActivity {
+  margin: 10px;
+  border-radius: 10px;
+  padding: 0px;
+  width: 18rem;
+  /*animation: textMove 0.4s infinite alternate;*/
+}
+
+.activityImage {
+  height: 256px;
+  min-width: 256px;
+  /*animation: zoom-in-zoom-out 1s ease infinite;*/
+}
+
+@keyframes zoom-in-zoom-out {
+  0% {
+    transform: scale(1, 1);
+  }
+  50% {
+    transform: scale(1.1, 1.1);
+  }
+  100% {
+    transform: scale(1, 1);
+  }
+}
+
+@keyframes textMove {
+  from {
+      top: 30px;
+  }
+  to {
+      top: 5px;
+  }
+}
+
+.wiggleButton {
+  animation: wiggle 2s linear infinite;
+}
+
+/* Keyframes */
+@keyframes wiggle {
+  0%, 7% {
+      transform: rotateZ(0);
+  }
+  15% {
+      transform: rotateZ(-15deg);
+  }
+  20% {
+      transform: rotateZ(10deg);
+  }
+  25% {
+      transform: rotateZ(-10deg);
+  }
+  30% {
+      transform: rotateZ(6deg);
+  }
+  35% {
+      transform: rotateZ(-4deg);
+  }
+  40%, 100% {
+      transform: rotateZ(0);
+  }
+}
+
+/* CONTACT */
+
+.flexForm {
+  display: flex;
+flex-direction: row;
+justify-content: space-evenly;
+border: 1px solid black;
+width: 100%;
+align-items: stretch;
+flex-wrap: wrap;
+align-content: stretch;
+  align-items: center;
+}
+
+.itemForm {
+  display: flex;
+  flex-direction: column;
+  padding: 20px;
+}

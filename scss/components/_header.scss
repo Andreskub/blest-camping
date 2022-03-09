@@ -1,0 +1,47 @@
+header {
+  display: flex;
+  justify-content: center;
+  overflow: hidden;
+  width: 100%;
+  background-color: #598392;
+  position: sticky;
+  top: 0px;
+  z-index: 1;
+}
+
+header .mainNav {
+
+  ul {
+    list-style: none;
+    position: relative;
+    margin-top: 1.2em;
+    display: flex;
+  }
+
+  a {
+    margin: 0 5px 0 5px;
+    text-decoration: none;
+    font-size: 1.5em;
+    font-weight: 600;
+    color: antiquewhite;
+    padding: 5px;
+    position: relative;
+    transition: all 0.1ms 150ms;
+    vertical-align: middle;
+
+    &:hover {
+      font-weight: 900;
+    }
+
+    &:hover::after, &:hover::before {
+      transform: scale(1);
+    }
+
+  }
+}
+
+@media screen and (max-width: 480px) {
+  header .mainNav a {
+    font-size: 1.3rem;
+  }
+}
