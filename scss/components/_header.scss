@@ -3,7 +3,7 @@ header {
   justify-content: center;
   overflow: hidden;
   width: 100%;
-  background-color: #598392;
+  background-color: $primaryColour;
   position: sticky;
   top: 0px;
   z-index: 1;
@@ -23,14 +23,14 @@ header .mainNav {
     text-decoration: none;
     font-size: 1.5em;
     font-weight: 600;
-    color: antiquewhite;
+    color: $secondaryColour;
     padding: 5px;
     position: relative;
     transition: all 0.1ms 150ms;
     vertical-align: middle;
 
     &:hover {
-      font-weight: 900;
+      font-weight: 700;
     }
 
     &:hover::after, &:hover::before {

@@ -5,6 +5,7 @@
 @import _grilla
 */
 
+@import "./variables";
 @import "./components/global";
 @import "./components/header";
 @import "./components/footer";
@@ -22,9 +23,10 @@ nav {
   }
 }
 
+
 a {
   text-decoration: none;
-  color: antiquewhite;
+  color: $secondaryColour;
   font-size: larger;
 }
 
@@ -63,7 +65,7 @@ a {
 
 .infoText {
   border-radius: 15px;
-  background-color: blanchedalmond;
+  background-color: $secondaryColour;
   padding: 15px;
   margin: 40px 20px;
   align-items: center;
