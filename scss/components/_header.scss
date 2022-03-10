@@ -2,7 +2,6 @@ header {
   display: flex;
   justify-content: center;
   overflow: hidden;
-  width: 100%;
   background-color: $primaryColour;
   position: sticky;
   top: 0px;
@@ -43,5 +42,12 @@ header .mainNav {
 @media screen and (max-width: 480px) {
   header .mainNav a {
     font-size: 1.3rem;
+  }
+}
+
+@media screen and (max-width: 991px) {
+  header {
+    justify-content: start;
+    padding-left: 10px;
   }
 }

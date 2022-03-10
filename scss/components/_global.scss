@@ -3,8 +3,28 @@
   padding: 0;
   box-sizing: border-box;
   font-family: 'Kanit', sans-serif;
+  box-sizing: border-box;
 }
 
 main {
   min-height: 100vh;
+}
+
+nav {
+  display: flex;
+
+  ul {
+    display: flex;
+    list-style: none;
+    padding: 0px 10px 0px 10px;
+    align-items: center;
+    justify-content: space-evenly;
+    width: 300px;
+  }
+}
+
+a {
+  text-decoration: none;
+  color: $secondaryColour;
+  font-size: larger;
 }

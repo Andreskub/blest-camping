@@ -40,37 +40,51 @@
         <!-- End Header-->
 
         <main>
-            <section>
-                <!-- Start Client Form -->
-                <form action="" method="" enctype="" class="flexForm">
-                    <!-- text, password, email -->
-                    <div class="itemForm">
-                        <label for="name">Full Name:</label>
-                        <input type="text" name="name" id="name"/>
+            <!--Start Form-->
+            <section class="container">
+                <h2 class="text-center p-4">Contact</h2>
+                <div class="d-flex justify-content-center">
+                    <div class="col-lg-6 col-sm-12 boxBorder">
+                        <form class="p-3">
+                            <div class="form-group m-1">
+                                <!-- Full Name -->
+                                <label for="full_name_id" class="control-label">Full Name</label>
+                                <input type="text" class="form-control" id="full_name_id" name="full_name"
+                                    placeholder="Enter your full name">
+                            </div>
+
+                            <div class="form-group m-1">
+                                <!-- Email -->
+                                <label for="email" class="control-label">Email</label>
+                                <input type="text" class="form-control" id="email" name="email"
+                                    placeholder="Enter your email">
+                            </div>
+
+                            <div class="form-group m-1">
+                                <!-- Phone -->
+                                <label for="phone_number" class="control-label">Phone Number</label>
+                                <input type="text" class="form-control" id="phone_number" name="phone_number"
+                                    placeholder="Enter your phone number">
+                            </div>
+
+                            <div class="form-group m-1 d-flex justify-content-between">
+                                <!-- Accommodation -->
+                                <div class="d-flex flex-column justify-content-start">
+                                    <label for="accommodation" class="control-label">Accommodation</label>
+                                    <select name="accommodation" id="accommodation">
+                                        <option value="" selected>--Please choose an option--</option>
+                                        <option value="Dormis">Dormis</option>
+                                        <option value="Camping">Camping</option>
+                                    </select>
+                                </div>
+                                
+                                <div class="d-flex justify-content-end">
+                                    <button type="submit" class="btn btn-primary wiggleButton">Send</button>
+                                </div>
+                            </div>  
+                        </form>
                     </div>
-                    <div class="itemForm">
-                        <label for="email">Email:</label>
-                        <input type="email" id="email"/>
-                    </div>
-                    <div class="itemForm">
-                        <label for="phone">Phone:</label>
-                        <input type="phone" id="phone"/>
-                    </div>
-                    
-                    <div class="itemForm">
-                        <p>Accomodation</p>
-                        <select name="" id="">
-                            <option value="Dormis" selected>Dormis</option>
-                            <option value="Camping">Camping</option>
-                        </select>
-                    </div>
-    
-                    <!-- reset, button-->
-                    <div class="d-grid gap-2 d-md-flex justify-content-md-end itemForm">
-                        <button class="btn btn-primary wiggleButton" type="submit">Send</button>
-                    </div>
-                </form>
-                <!-- End Client Form -->
+                </div>
             </section>
         </main>
         

@@ -1,35 +1,7 @@
-/*
-@import _struct
-@import _colours
-@import _tipografia
-@import _grilla
-*/
-
 @import "./variables";
 @import "./components/global";
 @import "./components/header";
 @import "./components/footer";
-
-nav {
-  display: flex;
-
-  ul {
-    display: flex;
-    list-style: none;
-    padding: 0px 10px 0px 10px;
-    align-items: center;
-    justify-content: space-evenly;
-    width: 300px;
-  }
-}
-
-
-a {
-  text-decoration: none;
-  color: $secondaryColour;
-  font-size: larger;
-}
-
 
 /* DASBOARD */
 
@@ -182,20 +154,6 @@ div.accommodationsText {
 
 /* CONTACT */
 
-.flexForm {
-  display: flex;
-flex-direction: row;
-justify-content: space-evenly;
-border: 1px solid black;
-width: 100%;
-align-items: stretch;
-flex-wrap: wrap;
-align-content: stretch;
-  align-items: center;
-}
-
-.itemForm {
-  display: flex;
-  flex-direction: column;
-  padding: 20px;
+.boxBorder {
+  box-shadow: 5px 5px 10px black;
 }
