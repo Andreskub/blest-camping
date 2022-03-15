@@ -1,0 +1,66 @@
+header {
+  display: flex;
+  justify-content: center;
+  overflow: hidden;
+  background-color: $primaryColour;
+  position: sticky;
+  top: 0px;
+  z-index: 1;
+
+  /* CASO A*/
+  @include mediaQuery(tablet){
+    justify-content: start;
+    padding-left: 10px;
+  }
+}
+
+header .mainNav {
+
+  ul {
+    list-style: none;
+    position: relative;
+    margin-top: 1.2em;
+    display: flex;
+  }
+
+  a {
+    margin: 0 5px 0 5px;
+    text-decoration: none;
+    font-size: 1.5em;
+    font-weight: 600;
+    color: $secondaryColour;
+    padding: 5px;
+    position: relative;
+    transition: all 0.1ms 150ms;
+    vertical-align: middle;
+
+    &:hover {
+      font-weight: 700;
+    }
+
+    &:hover::after, &:hover::before {
+      transform: scale(1);
+    }
+
+    /* CASO B*/
+    @include mediaQuery(mobile){
+      font-size: 1.3rem;  
+    }
+
+  }
+}
+
+/* CASO B
+@media screen and (max-width: map-get($breakpoints, mobile)) {
+  header .mainNav a {
+    font-size: 1.3rem;
+  }
+}*/
+
+/* CASO A
+@media screen and (max-width: map-get($breakpoints, tablet)) {
+  header {
+    justify-content: start;
+    padding-left: 10px;
+  }
+}*/

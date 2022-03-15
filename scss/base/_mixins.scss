@@ -1,0 +1,10 @@
+@use "sass:map";
+
+@mixin mediaQuery($key) {
+
+  $breakpoint: map.get($breakpoints, $key);    
+
+  @media screen and (max-width: $breakpoint){
+      @content;
+  }
+}
