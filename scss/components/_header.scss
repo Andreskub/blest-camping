@@ -6,6 +6,12 @@ header {
   position: sticky;
   top: 0px;
   z-index: 1;
+
+  /* CASO A*/
+  @include mediaQuery(tablet){
+    justify-content: start;
+    padding-left: 10px;
+  }
 }
 
 header .mainNav {
@@ -36,18 +42,25 @@ header .mainNav {
       transform: scale(1);
     }
 
+    /* CASO B*/
+    @include mediaQuery(mobile){
+      font-size: 1.3rem;  
+    }
+
   }
 }
 
-@media screen and (max-width: 480px) {
+/* CASO B
+@media screen and (max-width: map-get($breakpoints, mobile)) {
   header .mainNav a {
     font-size: 1.3rem;
   }
-}
+}*/
 
-@media screen and (max-width: 991px) {
+/* CASO A
+@media screen and (max-width: map-get($breakpoints, tablet)) {
   header {
     justify-content: start;
     padding-left: 10px;
   }
-}
+}*/
