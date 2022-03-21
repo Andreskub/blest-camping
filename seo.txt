@@ -1,0 +1,23 @@
+Blest Camping
+
+Para mejorar el SEO de mi pagina en general se realizó lo siguiente.
+
+- En el archivo index.html sumé el SEO con las siguientes características:
+Etiqueta meta con description, agregué el siguiente párrafo que explica en pocas palabras el contenido de mi sitio: <meta name="description" content="The Magic of Blest Lake. Visit and stay at Camping Blest with one of the most beautiful views of Blest Lake.">
+Etiqueta meta con keyword, agregué las palabras clave que acompañarán a todas las páginas de mi sitio: <meta name="keywords" content="CAMPING, DORMIS, BARILOCHE, ARGENTINA, BLEST, MOUNTAIN, LAKE">
+Encabezado: Se añadió la siguiente línea de comando: <title>Home | Blest Camping</title>
+
+- En el archivo accommodations.html sumé el SEO con las siguientes características:
+Etiqueta meta con description, agregué el siguiente párrafo que explica en pocas palabras el contenido de mi sitio: <meta name="description" content="The Magic of Blest Lake. Stay at Camping Blest with the most comfortable accommodations you will find nearby.">
+Etiqueta meta con keyword, agregué las palabras clave que acompañarán a todas las páginas de mi sitio: <meta name="keywords" content="CAMPING, DORMIS, ACCOMMODATION, BLEST, MOUNTAIN, LAKE">
+Encabezado: Se añadió la siguiente línea de comando: <title>Accomodations | Blest Camping</title>
+
+- En el archivo activities.html sumé el SEO con las siguientes características:
+Etiqueta meta con description, agregué el siguiente párrafo que explica en pocas palabras el contenido de mi sitio: <meta name="description" content="The Magic of Blest Lake. Stay along at Camping Blest with the some of the most funny activities we offer.">
+Etiqueta meta con keyword, agregué las palabras clave que acompañarán a todas las páginas de mi sitio: <meta name="keywords" content="CAMPING, BLEST, ACTIVITY, ACTIVITIES, MOUNTAIN, LAKE, MOUNTAINBIKE, KAYAK, TREKKING, ZIPPLINE ">
+Encabezado: Se añadió la siguiente línea de comando: <title>Activities | Blest Camping</title>
+
+- En el archivo contact.html sumé el SEO con las siguientes características:
+Etiqueta meta con description, agregué el siguiente párrafo que explica en pocas palabras el contenido de mi sitio: <meta name="description" content="The Magic of Blest Lake. Contact Camping Blest for more information.">
+Etiqueta meta con keyword, agregué las palabras clave que acompañarán a todas las páginas de mi sitio: <meta name="keywords" content="CAMPING, BLEST, CONTACT, INFORMATION, MOUNTAIN, LAKE, MAIL, INFO, MAIL, EMAIL">
+Encabezado: Se añadió la siguiente línea de comando: <title>Contact | Blest Camping</title>
