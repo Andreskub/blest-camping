@@ -34,11 +34,12 @@
                     <div class="d-md-flex d-block flex-row mx-md-auto mx-0">
                         <div class="collapse navbar-collapse mr-auto" id="navbarNavAltMarkup">
                             <div class="navbar-nav align-items-center">
-                                <a class="nav-item nav-link align-bottom" href="./views/accommodations.html">Accommodations</a>
-                                <a class="nav-item nav-link" href="./views/activities.html">Activities</a>
-                                <a href="./index.html"><img src="./assets/img/logo.png" alt="Blest Logo"></a>
-                                <a class="nav-item nav-link" href="./views/location.html">Location</a>
-                                <a class="nav-item nav-link" href="./views/contact.html">Contact</a>
+                                <a class="nav-item" href="./views/accommodations.html">Accommodations</a>
+                                <a class="nav-item" href="./views/activities.html">Activities</a>
+                                <a class="nav-item hideIcon" href="./index.html"><img src="./assets/img/logo.png" alt="Blest Logo"></a>
+                                <a class="nav-item hideText" href="./index.html">Home</a>
+                                <a class="nav-item" href="./views/location.html">Location</a>
+                                <a class="nav-item" href="./views/contact.html">Contact</a>
                             </div>
                         </div>
                     </div>
@@ -61,10 +62,14 @@
             </section>
             <!-- End Home Phrase -->
 
+            <section class="container-fluid text-center mt-4 mb-4">
+                <img src="./assets/img/helpers/separator-1.png" alt="Separator">
+            </section>
+
             <!-- Start Home Description -->
             <section class="container">
+                <h1 class="text-center p-4">Blest Camping</h1>
                 <div class="infoText">
-                    <h1>Blest Camping</h1>
                     <h4>
                         Cutting through Bariloche and beyond, the Blest is spotted with camping locations that range from rustic, backcountry expeditions to glamping services with full hookups. Provincial parks, along with plenty of privately owned sites, offer space to pitch your tent or park your RV for uniquely Blest Lake experiences.
                         Camping along the Blest comes in many shapes and sizes, from luxury RV touring, to backcountry tenting, or just some good old-fashioned family camping, every spot offers something different and is guaranteed to inspire good times and that sense of getting off the beaten path.
@@ -77,10 +82,23 @@
         <!-- Start Footer -->
         <footer class="container-fluid">
             <div class="row">
-                <ul>
-                    <li><img src="/blest-camping/assets/img/logo.png" alt="Blest Logo"></li>
-                    <li><p>Blest Camping &copy;</p></li>
-                </ul>
+                <div class="col my-auto columnStyle">
+                    <p class="mt-0 mb-0">Av. Ezequiel Bustillo Km. 25, R8401</p>
+                    <p class="mt-0 mb-0">San Carlos de Bariloche</p>
+                    <p class="mt-0 mb-0">Río Negro</p>
+                </div>
+                <div class="col my-auto columnStyle">
+                    <img src="/blest-camping/assets/img/logo.png" alt="Blest Logo">
+                    <p>Blest Camping &copy;</p>
+                </div>
+                <div class="col my-auto columnStyle">
+                    <p>Follow Us!</p>
+                    <div class="row justify-content-md-center">
+                        <a class="col socialImage" href="https://www.facebook.com/"><img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/15542/facebook.png" alt="Facebook"></a>
+                        <a class="col socialImage" href="https://www.linkedin.com/"><img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/15542/linkedin.png" alt="LinkedIn"></a>
+                        <a class="col socialImage" href="https://twitter.com/"><img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/15542/twitter.png" alt="Twitter"></a>
+                    </div>
+                </div>
             </div>
         </footer>
         <!-- End Footer -->

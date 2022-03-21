@@ -34,6 +34,7 @@ header .mainNav {
     transition: all 0.1ms 150ms;
     vertical-align: middle;
 
+
     &:hover {
       font-weight: 700;
     }
@@ -44,11 +45,33 @@ header .mainNav {
 
     /* CASO B*/
     @include mediaQuery(mobile){
-      font-size: 1.3rem;  
+      font-size: 1.3rem;
     }
 
   }
 }
+
+.hideText{
+  display: none;
+
+  @include mediaQuery(tablet){
+    display: block;
+  }
+}
+
+.hideIcon{
+  display: block;
+
+  @include mediaQuery(tablet){
+    display: none;
+  }
+}
+/* Temporary Solution
+@media screen and (max-width: 480px) {
+  .hide{
+    display: none;
+  }
+}*/
 
 /* CASO B
 @media screen and (max-width: map-get($breakpoints, mobile)) {
