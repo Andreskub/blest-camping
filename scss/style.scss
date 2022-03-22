@@ -108,6 +108,12 @@ div.accommodationsText {
   /*animation: zoom-in-zoom-out 1s ease infinite;*/
 }
 
+/* LOCATION */
+
+.locationText {
+  max-width: 600px;
+}
+
 @keyframes zoom-in-zoom-out {
   0% {
     transform: scale(1, 1);
