@@ -45,7 +45,7 @@ header .mainNav {
 
     /* CASO B*/
     @include mediaQuery(mobile){
-      font-size: 1.3rem;
+      font-size: 1.0rem;
     }
 
   }
@@ -66,12 +66,7 @@ header .mainNav {
     display: none;
   }
 }
-/* Temporary Solution
-@media screen and (max-width: 480px) {
-  .hide{
-    display: none;
-  }
-}*/
+
 
 /* CASO B
 @media screen and (max-width: map-get($breakpoints, mobile)) {
