@@ -16,13 +16,6 @@ header {
 
 header .mainNav {
 
-  ul {
-    list-style: none;
-    position: relative;
-    margin-top: 1.2em;
-    display: flex;
-  }
-
   a {
     margin: 0 5px 0 5px;
     text-decoration: none;
@@ -67,18 +60,11 @@ header .mainNav {
   }
 }
 
+.alignNavBar {
+  width: 350px;
+  align-items: center;
 
-/* CASO B
-@media screen and (max-width: map-get($breakpoints, mobile)) {
-  header .mainNav a {
-    font-size: 1.3rem;
+  @include mediaQuery(tablet){
+    align-items: flex-start;
   }
-}*/
-
-/* CASO A
-@media screen and (max-width: map-get($breakpoints, tablet)) {
-  header {
-    justify-content: start;
-    padding-left: 10px;
-  }
-}*/
+}
