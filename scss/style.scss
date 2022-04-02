@@ -114,6 +114,26 @@ div.accommodationsText {
   max-width: 600px;
 }
 
+.locationMap {
+  width: auto;
+  min-width: 600px;
+  min-height: 450px;
+
+
+  @include mediaQuery(tablet){
+    min-width: 400px;
+    min-height: 300px;
+  }
+
+  @include mediaQuery(mobile){
+    min-width: 300px;
+    min-width: 200px;
+  }
+
+}
+
+
+
 @keyframes zoom-in-zoom-out {
   0% {
     transform: scale(1, 1);
