@@ -57,29 +57,23 @@
 .displayAccommodations {
   display: flex;
   flex-direction: row;
-  justify-content: center;
+  justify-content: space-around;
   flex-wrap: wrap;
   padding: 20px;
+
+  &.rotateChildren {
+    @include mediaQuery(tablet){
+      display: flex;
+      flex-direction: column-reverse;
+      justify-content: center;
+      flex-wrap: wrap;
+      padding: 20px;
+      align-items: center;
+    }
+  }
 }
 
-.accommodationImage {
-  width: 500px;
-  border: 10px solid transparent;
-  border: 5px solid #AEC3B0;
-  border-radius: 10px;
-}
-
-.accommodationsText {
-  padding: 20px;
-  align-items: center;
-  max-width: 300px;
-}
-
-div.accommodationsText {
-  align-items: center;
-  text-align: center;
-}
-
+/*
 @media screen and (max-width: 840px) {
   .displayAccommodations.rotateChildren{
       display: flex;
@@ -90,6 +84,34 @@ div.accommodationsText {
       align-items: center;
       
   }
+}*/
+
+.accommodationImage {
+  max-width: 500px;
+  width: 100%;
+  border: 10px solid transparent;
+  border: 5px solid #AEC3B0;
+  border-radius: 10px;
+
+  @include mediaQuery(tablet){
+    width: 100%;
+    max-width: 500px;
+  }
+
+  @include mediaQuery(mobile){
+    width: 100%;
+  }
+}
+
+.accommodationsText {
+  padding: 20px;
+  align-items: center;
+  max-width: 500px;
+}
+
+div.accommodationsText {
+  align-items: center;
+  text-align: center;
 }
 
 /* ACTIVITIES */
