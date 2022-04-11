@@ -65,12 +65,20 @@
 .displayAccommodations {
   display: flex;
   flex-direction: row;
-  justify-content: space-around;
+  justify-content: center;
   flex-wrap: wrap;
   padding: 20px;
 
   &.rotateChildren {
-    @include mediaQuery(tablet){
+    /*@include mediaQuery(laptop){ //laptop-1
+      display: flex;
+      flex-direction: column-reverse;
+      justify-content: center;
+      flex-wrap: wrap;
+      padding: 20px;
+      align-items: center;
+    }*/
+    @media screen and (max-width: 1199px) {
       display: flex;
       flex-direction: column-reverse;
       justify-content: center;
